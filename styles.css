@@ -27,10 +27,11 @@ header nav a {
     text-decoration: none;
     margin: 0 10px;
     cursor: pointer;
+    transition: color 0.3s ease; /* Smooth hover effect */
 }
 
 header nav a:hover {
-    text-decoration: underline;
+    color: #ff9800; /* Change color on hover */
 }
 
 /* Section Styling */
@@ -40,8 +41,25 @@ section {
     border: 1px solid #ccc;
     border-radius: 5px;
     background: #fff;
+    opacity: 1;
+    transform: scale(1);
+    transition: all 0.5s ease; /* Smooth transition for animations */
 }
 
+.hidden {
+    opacity: 0; /* Hidden by default */
+    transform: scale(0.95); /* Slightly shrunk */
+    height: 0;
+    overflow: hidden;
+}
+
+.visible {
+    opacity: 1;
+    transform: scale(1);
+    height: auto;
+}
+
+/* Welcome Section */
 #welcome {
     display: block; /* Always visible */
 }
@@ -65,6 +83,11 @@ section#socials ul li {
 section#socials ul li i {
     margin-right: 10px;
     color: #555; /* Default icon color */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+section#socials ul li i:hover {
+    color: #0078d7; /* Change icon color on hover */
 }
 
 /* Footer Styling */
@@ -75,4 +98,3 @@ footer {
     background-color: #333;
     color: #fff;
 }
-
