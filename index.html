@@ -10,7 +10,7 @@
     <!-- Medieval Font -->
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
     <script>
-        // Function to toggle visibility of sections with smooth transitions
+        // Function to toggle visibility of sections
         function toggleSection(sectionId) {
             const section = document.getElementById(sectionId);
             section.classList.toggle('visible');
@@ -18,9 +18,11 @@
     </script>
 </head>
 <body>
-    <header>
-        <div class="banner">
+    <!-- Full-Width Header -->
+    <header class="header-banner">
+        <div class="banner-content">
             <h1 class="animated-title">Welcome to the Kingdom</h1>
+            <p>A realm of glory and honor awaits.</p>
         </div>
         <nav>
             <a href="javascript:void(0)" onclick="toggleSection('about')">About</a> | 
@@ -31,11 +33,11 @@
         <!-- Welcome Section -->
         <section id="welcome">
             <h2>Welcome</h2>
-            <p><strong>Click the above tabs to explore the kingdom!</strong></p>
+            <p><strong>Click the tabs above to navigate your kingdom!</strong></p>
         </section>
 
         <!-- About Me Section -->
-        <section id="about" class="hidden">
+        <section id="about" class="hidden card">
             <h2>About Me</h2>
             <p>Nickname: <strong>Seven</strong> (or Bogdan in Ark ASE/ASA).</p>
             <p>Title/Identity: <strong>Certified "one and only otaku warrior video game warlord."</strong></p>
@@ -43,7 +45,7 @@
         </section>
 
         <!-- Socials Section -->
-        <section id="socials" class="hidden">
+        <section id="socials" class="hidden card">
             <h2>Socials</h2>
             <p>Feel free to connect with me:</p>
             <ul>
@@ -55,8 +57,7 @@
         </section>
     </main>
     <footer>
-        <p>&copy; 2024 Your Kingdom</p>
+        <p>&copy; 2024 Your Kingdom | Powered by Seven</p>
     </footer>
 </body>
 </html>
-
