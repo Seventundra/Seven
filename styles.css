@@ -26,6 +26,7 @@ header nav a {
     color: #fff;
     text-decoration: none;
     margin: 0 10px;
+    cursor: pointer;
 }
 
 header nav a:hover {
@@ -35,21 +36,15 @@ header nav a:hover {
 /* Section Styling */
 section {
     margin: 20px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background: #fff;
 }
 
 h2 {
     color: #444;
     margin-bottom: 10px;
-}
-
-/* Contact List */
-section#contact ul {
-    list-style: none;
-    padding: 0;
-}
-
-section#contact ul li {
-    margin: 5px 0;
 }
 
 /* Footer Styling */
