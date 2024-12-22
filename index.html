@@ -8,14 +8,10 @@
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <script>
-        // Function to toggle visibility of sections
+        // Function to toggle visibility of sections with smooth transitions
         function toggleSection(sectionId) {
             const section = document.getElementById(sectionId);
-            if (section.style.display === 'none' || section.style.display === '') {
-                section.style.display = 'block';
-            } else {
-                section.style.display = 'none';
-            }
+            section.classList.toggle('visible');
         }
     </script>
 </head>
@@ -31,12 +27,11 @@
         <!-- Welcome Section -->
         <section id="welcome">
             <h2>Welcome</h2>
-            <p>Hello! Welcome to my personal website. I’m excited to share a bit about myself with you!</p>
             <p><strong>Click the above tabs to learn and see more.</strong></p>
         </section>
 
         <!-- About Me Section -->
-        <section id="about" style="display: none;">
+        <section id="about" class="hidden">
             <h2>About Me</h2>
             <p>Nickname: <strong>Seven</strong> (or Bogdan in Ark ASE/ASA).</p>
             <p>Title/Identity: <strong>Certified "one and only otaku warrior video game warlord."</strong></p>
@@ -44,7 +39,7 @@
         </section>
 
         <!-- Socials Section -->
-        <section id="socials" style="display: none;">
+        <section id="socials" class="hidden">
             <h2>Socials</h2>
             <p>Feel free to connect with me:</p>
             <ul>
@@ -60,4 +55,5 @@
     </footer>
 </body>
 </html>
+
 
