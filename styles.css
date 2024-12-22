@@ -52,6 +52,22 @@ h2 {
     margin-bottom: 10px;
 }
 
+/* Socials Section Styling */
+section#socials ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#socials ul li {
+    margin: 10px 0;
+    font-size: 1.2em;
+}
+
+section#socials ul li i {
+    margin-right: 10px;
+    color: #555; /* Default icon color */
+}
+
 /* Footer Styling */
 footer {
     text-align: center;
