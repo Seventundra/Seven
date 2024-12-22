@@ -7,34 +7,68 @@
 
 /* Body Styling */
 body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #0b0c10; /* Deep Space Black */
+    font-family: 'Cinzel', serif; /* Medieval-inspired font for headers */
+    background-color: #0b0c10; /* Castle black */
     color: #c5c6c7; /* Steel Grey */
     padding: 20px;
+    overflow-x: hidden;
+}
+
+/* Animated Title */
+.animated-title {
+    font-size: 3rem;
+    text-align: center;
+    color: #ffc300; /* Gold for a royal effect */
+    animation: fadeInTitle 2s ease-in-out, glowEffect 2s ease-in-out infinite alternate;
+    text-shadow: 0 0 10px #ffc300, 0 0 20px #ffc300;
+    border-bottom: 4px solid #c0c0c0; /* Metallic Silver */
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* Title Fade-In Animation */
+@keyframes fadeInTitle {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Glow Effect Animation */
+@keyframes glowEffect {
+    from {
+        text-shadow: 0 0 10px #ffc300, 0 0 20px #ffc300, 0 0 30px #ffc300;
+    }
+    to {
+        text-shadow: 0 0 20px #ffd700, 0 0 30px #ffd700, 0 0 40px #ffd700;
+    }
 }
 
 /* Header Styling */
 header {
     text-align: center;
-    padding: 10px;
+    padding: 20px 10px;
     background-color: #1f2833; /* Galaxy Blue */
-    color: #c5c6c7; /* Steel Grey */
     border-bottom: 2px solid #0f3460; /* Midnight Blue */
 }
 
+/* Navigation Links */
 header nav a {
     color: #c5c6c7; /* Steel Grey */
     text-decoration: none;
-    margin: 0 10px;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 1.2em;
+    margin: 0 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
 
 header nav a:hover {
-    background-color: #45a29e; /* Electric Blue */
-    color: #0b0c10; /* Deep Space Black */
+    color: #ffc300; /* Gold */
+    transform: scale(1.1); /* Slight zoom effect */
 }
 
 /* Section Styling */
@@ -95,4 +129,3 @@ footer {
     color: #c5c6c7; /* Steel Grey */
     border-top: 2px solid #0f3460; /* Midnight Blue */
 }
-
