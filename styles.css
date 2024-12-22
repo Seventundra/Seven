@@ -40,11 +40,10 @@ section {
     border: 1px solid #ccc;
     border-radius: 5px;
     background: #fff;
-    display: none; /* Hidden by default */
 }
 
 #welcome {
-    display: block; /* Welcome section is visible by default */
+    display: block; /* Always visible */
 }
 
 h2 {
@@ -75,7 +74,5 @@ footer {
     padding: 10px;
     background-color: #333;
     color: #fff;
-}
-
 }
 
