@@ -1,0 +1,62 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header Styling */
+header {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    margin: 20px 0;
+}
+
+h2 {
+    color: #444;
+    margin-bottom: 10px;
+}
+
+/* Contact List */
+section#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+section#contact ul li {
+    margin: 5px 0;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
