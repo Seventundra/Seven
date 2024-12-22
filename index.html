@@ -6,7 +6,7 @@
     <title>Welcome to My Website</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        // JavaScript to toggle visibility of sections
+        // Function to toggle visibility of sections
         function toggleSection(sectionId) {
             const section = document.getElementById(sectionId);
             if (section.style.display === 'none' || section.style.display === '') {
@@ -27,16 +27,21 @@
         </nav>
     </header>
     <main>
+        <!-- Welcome Section -->
         <section id="welcome">
             <h2>Welcome</h2>
             <p>Hello! Welcome to my personal website. I’m excited to share a bit about myself with you!</p>
         </section>
+
+        <!-- About Me Section -->
         <section id="about" style="display: none;">
             <h2>About Me</h2>
             <p>Nickname: <strong>Seven</strong> (or Bogdan in Ark ASE/ASA).</p>
             <p>Title/Identity: <strong>Certified "one and only otaku warrior video game warlord."</strong></p>
             <p>Base Location: <strong>East Coast, USA. (drop cords)</strong></p>
         </section>
+
+        <!-- Socials Section -->
         <section id="socials" style="display: none;">
             <h2>Socials</h2>
             <p>Feel free to connect with me:</p>
@@ -45,11 +50,3 @@
                 <li>Steam: <strong>seventundra4200</strong></li>
                 <li>Discord: <strong>theseven007</strong></li>
                 <li>TikTok: <a href="https://www.tiktok.com/@seventundra4200" target="_blank">@seventundra4200</a></li>
-            </ul>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
-</body>
-</html>
