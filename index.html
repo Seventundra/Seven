@@ -5,27 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Welcome To The Kingdom</title>
     <style>
-        /* Place full CSS here temporarily for debugging */
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Body Styling with Starry Night Background */
         body {
-            font-family: 'Cinzel', serif;
-            background-color: #0b0c10; /* Castle black */
+            font-family: 'Cinzel', serif; /* Medieval font */
+            background: linear-gradient(to bottom, #1b1b2f, #162447), url('https://source.unsplash.com/1920x1080/?stars,night') no-repeat center center fixed;
+            background-size: cover;
             color: #c5c6c7; /* Steel Grey */
             overflow-x: hidden;
         }
 
+        /* Header Banner */
         .header-banner {
-            background: linear-gradient(to right, #1f2833, #0b0c10);
-            color: #ffc300;
+            background: url('https://source.unsplash.com/1600x400/?castle,brickwall') no-repeat center center;
+            background-size: cover;
             text-align: center;
             padding: 50px 10px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
+            color: #ffc300; /* Gold */
+            text-shadow: 0 0 10px #000, 0 0 20px #000;
         }
 
-        .animated-title {
+        .banner-content h1 {
             font-size: 3rem;
-            text-shadow: 0 0 10px #ffc300, 0 0 20px #ffc300;
             animation: glowEffect 2s ease-in-out infinite alternate;
         }
 
@@ -38,28 +45,58 @@
             }
         }
 
-        .parallax {
-            background: url('https://source.unsplash.com/1600x900/?castle') no-repeat center;
-            background-size: cover;
-            height: 400px;
-            position: relative;
-            z-index: 0;
+        /* Navigation Links */
+        header nav a {
+            color: #ffc300; /* Gold */
+            text-decoration: none;
+            font-size: 1.2em;
+            margin: 0 15px;
+            transition: color 0.3s ease, transform 0.3s ease;
         }
 
+        header nav a:hover {
+            color: #ffffff; /* White */
+            transform: scale(1.1);
+        }
+
+        /* Section Styling */
         .section {
             margin: 20px auto;
             padding: 20px;
             border-radius: 10px;
-            background-color: #1f1f1f;
+            background-color: rgba(31, 31, 31, 0.9); /* Semi-transparent Dark Grey */
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
             width: 90%;
             max-width: 800px;
         }
 
         .section h2 {
-            color: #ffc300;
+            color: #ffc300; /* Gold */
         }
 
+        /* Socials Section Styling */
+        section#socials ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        section#socials ul li {
+            margin: 10px 0;
+            font-size: 1.2em;
+            color: #45a29e; /* Electric Blue */
+        }
+
+        section#socials ul li i {
+            margin-right: 10px;
+            color: #5c5b8a; /* Nebula Purple */
+            transition: color 0.3s ease;
+        }
+
+        section#socials ul li i:hover {
+            color: #ffc300; /* Gold */
+        }
+
+        /* Footer Styling */
         footer {
             text-align: center;
             padding: 10px;
@@ -70,9 +107,10 @@
     </style>
 </head>
 <body>
+    <!-- Header with Castle Background -->
     <header class="header-banner">
         <div class="banner-content">
-            <h1 class="animated-title">Welcome to the Kingdom</h1>
+            <h1>Welcome to the Kingdom</h1>
             <p>A realm of glory and honor awaits.</p>
         </div>
         <nav>
@@ -82,14 +120,15 @@
         </nav>
     </header>
 
-    <div class="parallax"></div>
-
+    <!-- Main Content -->
     <main>
+        <!-- Welcome Section -->
         <section id="welcome" class="section">
             <h2>Welcome</h2>
             <p><strong>Click the tabs above to navigate your kingdom!</strong></p>
         </section>
 
+        <!-- About Section -->
         <section id="about" class="section">
             <h2>About Me</h2>
             <p>Nickname: <strong>Seven</strong> (or Bogdan in Ark ASE/ASA).</p>
@@ -97,6 +136,7 @@
             <p>Base Location: <strong>East Coast, USA. (drop cords)</strong></p>
         </section>
 
+        <!-- Socials Section -->
         <section id="socials" class="section">
             <h2>Socials</h2>
             <p>Feel free to connect with me:</p>
@@ -109,6 +149,7 @@
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <p>&copy; 2024 Your Kingdom | Long Live the Realm</p>
     </footer>
