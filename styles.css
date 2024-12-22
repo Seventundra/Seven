@@ -9,63 +9,58 @@
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
+    background-color: #1a1a40; /* Dark Blue */
+    color: #dcdcdc; /* Light Grey */
     padding: 20px;
-    color: #333;
-    background-color: #f4f4f4;
 }
 
 /* Header Styling */
 header {
     text-align: center;
     padding: 10px;
-    background-color: #333;
-    color: #fff;
+    background-color: #4b7bec; /* Blue */
+    color: #ffffff; /* White */
+    border-bottom: 2px solid #c0c0c0; /* Silver */
 }
 
 header nav a {
-    color: #fff;
+    color: #ffffff; /* White */
     text-decoration: none;
     margin: 0 10px;
-    cursor: pointer;
-    transition: color 0.3s ease; /* Smooth hover effect */
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 header nav a:hover {
-    color: #ff9800; /* Change color on hover */
+    background-color: #c0c0c0; /* Silver */
+    color: #1a1a40; /* Dark Blue */
 }
 
 /* Section Styling */
 section {
     margin: 20px 0;
-    padding: 10px;
-    border: 1px solid #ccc;
+    padding: 20px;
     border-radius: 5px;
-    background: #fff;
-    opacity: 1;
-    transform: scale(1);
-    transition: all 0.5s ease; /* Smooth transition for animations */
+    background-color: #f4f4f4; /* Light Grey */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
-.hidden {
-    opacity: 0; /* Hidden by default */
-    transform: scale(0.95); /* Slightly shrunk */
-    height: 0;
-    overflow: hidden;
-}
-
-.visible {
-    opacity: 1;
-    transform: scale(1);
-    height: auto;
+section:hover {
+    background-color: #ffffff; /* White */
+    transform: scale(1.02); /* Slight zoom effect */
 }
 
 /* Welcome Section */
 #welcome {
-    display: block; /* Always visible */
+    background-color: #4b7bec; /* Blue */
+    color: #ffffff; /* White */
 }
 
+/* Section Headers */
 h2 {
-    color: #444;
+    color: #c0c0c0; /* Silver */
     margin-bottom: 10px;
 }
 
@@ -78,16 +73,17 @@ section#socials ul {
 section#socials ul li {
     margin: 10px 0;
     font-size: 1.2em;
+    color: #4b7bec; /* Blue */
 }
 
 section#socials ul li i {
     margin-right: 10px;
-    color: #555; /* Default icon color */
-    transition: color 0.3s ease; /* Smooth hover effect */
+    color: #dcdcdc; /* Light Grey */
+    transition: color 0.3s ease;
 }
 
 section#socials ul li i:hover {
-    color: #0078d7; /* Change icon color on hover */
+    color: #c0c0c0; /* Silver */
 }
 
 /* Footer Styling */
@@ -95,6 +91,7 @@ footer {
     text-align: center;
     margin-top: 20px;
     padding: 10px;
-    background-color: #333;
-    color: #fff;
+    background-color: #000000; /* Black */
+    color: #dcdcdc; /* Light Grey */
+    border-top: 2px solid #707070; /* Grey */
 }
