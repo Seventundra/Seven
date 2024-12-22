@@ -6,13 +6,13 @@
     <title>Welcome to My Website</title>
     <link rel="stylesheet" href="styles.css">
     <script>
-        // JavaScript to toggle visibility of the About Me section
-        function toggleAbout() {
-            const aboutSection = document.getElementById('about');
-            if (aboutSection.style.display === 'none' || aboutSection.style.display === '') {
-                aboutSection.style.display = 'block';
+        // JavaScript to toggle visibility of sections
+        function toggleSection(sectionId) {
+            const section = document.getElementById(sectionId);
+            if (section.style.display === 'none' || section.style.display === '') {
+                section.style.display = 'block';
             } else {
-                aboutSection.style.display = 'none';
+                section.style.display = 'none';
             }
         }
     </script>
@@ -22,8 +22,8 @@
         <h1>Welcome to My Website</h1>
         <nav>
             <a href="#welcome">Welcome</a> | 
-            <a href="javascript:void(0)" onclick="toggleAbout()">About</a> | 
-            <a href="#contact">Contact</a>
+            <a href="javascript:void(0)" onclick="toggleSection('about')">About</a> | 
+            <a href="javascript:void(0)" onclick="toggleSection('socials')">Socials</a>
         </nav>
     </header>
     <main>
@@ -37,8 +37,8 @@
             <p>Title/Identity: <strong>Certified "one and only otaku warrior video game warlord."</strong></p>
             <p>Base Location: <strong>East Coast, USA. (drop cords)</strong></p>
         </section>
-        <section id="contact">
-            <h2>Contact</h2>
+        <section id="socials" style="display: none;">
+            <h2>Socials</h2>
             <p>Feel free to connect with me:</p>
             <ul>
                 <li>Email: <a href="mailto:you@example.com">you@example.com</a></li>
@@ -52,5 +52,4 @@
     </footer>
 </body>
 </html>
-
 
