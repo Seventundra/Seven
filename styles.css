@@ -40,6 +40,7 @@ section {
     border: 1px solid #ccc;
     border-radius: 5px;
     background: #fff;
+    display: none; /* Hidden by default */
 }
 
 h2 {
@@ -55,3 +56,4 @@ footer {
     background-color: #333;
     color: #fff;
 }
+
