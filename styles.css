@@ -43,6 +43,10 @@ section {
     display: none; /* Hidden by default */
 }
 
+#welcome {
+    display: block; /* Welcome section is visible by default */
+}
+
 h2 {
     color: #444;
     margin-bottom: 10px;
