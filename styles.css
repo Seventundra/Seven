@@ -14,52 +14,25 @@ body {
     overflow-x: hidden;
 }
 
-/* Animated Title */
-.animated-title {
-    font-size: 3rem;
+/* Full-Width Header Banner */
+.header-banner {
+    background: linear-gradient(to right, #1f2833, #0b0c10); /* Galaxy Blue Gradient */
+    color: #ffc300; /* Gold */
     text-align: center;
-    color: #ffc300; /* Gold for a royal effect */
-    animation: fadeInTitle 2s ease-in-out, glowEffect 2s ease-in-out infinite alternate;
-    text-shadow: 0 0 10px #ffc300, 0 0 20px #ffc300;
-    border-bottom: 4px solid #c0c0c0; /* Metallic Silver */
-    display: inline-block;
-    padding-bottom: 10px;
+    padding: 50px 10px;
+    border-bottom: 5px solid #0f3460; /* Midnight Blue */
+}
+
+.banner-content {
     margin-bottom: 20px;
 }
 
-/* Title Fade-In Animation */
-@keyframes fadeInTitle {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+header nav {
+    margin-top: 10px;
 }
 
-/* Glow Effect Animation */
-@keyframes glowEffect {
-    from {
-        text-shadow: 0 0 10px #ffc300, 0 0 20px #ffc300, 0 0 30px #ffc300;
-    }
-    to {
-        text-shadow: 0 0 20px #ffd700, 0 0 30px #ffd700, 0 0 40px #ffd700;
-    }
-}
-
-/* Header Styling */
-header {
-    text-align: center;
-    padding: 20px 10px;
-    background-color: #1f2833; /* Galaxy Blue */
-    border-bottom: 2px solid #0f3460; /* Midnight Blue */
-}
-
-/* Navigation Links */
 header nav a {
-    color: #c5c6c7; /* Steel Grey */
+    color: #ffc300; /* Gold */
     text-decoration: none;
     font-size: 1.2em;
     margin: 0 15px;
@@ -67,35 +40,46 @@ header nav a {
 }
 
 header nav a:hover {
-    color: #ffc300; /* Gold */
-    transform: scale(1.1); /* Slight zoom effect */
+    color: #ffffff; /* White */
+    transform: scale(1.1);
+}
+
+/* Animated Title */
+.animated-title {
+    font-size: 3rem;
+    text-shadow: 0 0 10px #ffc300, 0 0 20px #ffc300;
+    animation: glowEffect 2s ease-in-out infinite alternate;
+}
+
+/* Glow Effect Animation */
+@keyframes glowEffect {
+    from {
+        text-shadow: 0 0 10px #ffc300, 0 0 20px #ffc300;
+    }
+    to {
+        text-shadow: 0 0 20px #ffd700, 0 0 30px #ffd700;
+    }
 }
 
 /* Section Styling */
 section {
     margin: 20px 0;
     padding: 20px;
-    border-radius: 5px;
+    border-radius: 10px;
     background-color: #1f1f1f; /* Dark Grey */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5); /* Subtle shadow */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, background-color 0.3s ease;
 }
 
 section:hover {
     background-color: #1f2833; /* Galaxy Blue */
-    transform: scale(1.02); /* Slight zoom effect */
+    transform: scale(1.02);
 }
 
-/* Welcome Section */
-#welcome {
-    background-color: #1f2833; /* Galaxy Blue */
-    color: #c5c6c7; /* Steel Grey */
-}
-
-/* Section Headers */
-h2 {
-    color: #45a29e; /* Electric Blue */
-    margin-bottom: 10px;
+/* Section Cards */
+.card {
+    border: 2px solid #0f3460; /* Midnight Blue */
+    padding: 20px;
 }
 
 /* Socials Section Styling */
@@ -117,7 +101,7 @@ section#socials ul li i {
 }
 
 section#socials ul li i:hover {
-    color: #45a29e; /* Electric Blue */
+    color: #ffc300; /* Gold */
 }
 
 /* Footer Styling */
@@ -129,3 +113,4 @@ footer {
     color: #c5c6c7; /* Steel Grey */
     border-top: 2px solid #0f3460; /* Midnight Blue */
 }
+
